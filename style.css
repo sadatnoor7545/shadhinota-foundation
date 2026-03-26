@@ -89,3 +89,7 @@ footer {
     margin: 20px 0;
     border-radius: 10px;
 }
+.logo-area img {
+    height: 40px;
+    margin-right: 10px;
+}
