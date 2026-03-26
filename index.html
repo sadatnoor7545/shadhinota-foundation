@@ -1,144 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shadhinota Foundation</title>
-
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f7f5;
-}
-
-/* NAVBAR */
-nav {
-  background: #0b3d2e;
-  color: white;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* HERO */
-.hero {
-  background: linear-gradient(to right, #0b3d2e, #1f7a4c);
-  color: white;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.hero img {
-  width: 180px;
-  margin-bottom: 20px;
-}
-
-.hero h1 {
-  font-size: 40px;
-}
-
-.hero p {
-  font-size: 18px;
-  max-width: 600px;
-  margin: auto;
-}
-
-/* BUTTON */
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: #e53935;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-}
-
-/* SECTIONS */
-section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  width: 220px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-/* FOOTER */
-footer {
-  background: #0b3d2e;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>Shadhinota Foundation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav>
-  <h2>Shadhinota Foundation</h2>
-</nav>
+<header>
+    <h1>Shadhinota Foundation</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#work">Our Work</a>
+        <a href="#donate">Donate</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-<!-- HERO -->
-<div class="hero">
-  <img src="./logo.png" alt="Logo" style="width:200px;">
-  <h1>Empowering Lives, Building a Better Tomorrow</h1>
-  <p>We work for food, education, health, unemployment and environment.</p>
-
-  <a class="btn" href="https://bkash.com/send-money" target="_blank">
-    Donate Now
-  </a>
-</div>
-
-<!-- ABOUT -->
-<section>
-  <h2>About Us</h2>
-  <p>
-    Shadhinota Foundation is a youth-led organization dedicated to helping people through
-    humanitarian support and sustainable development.
-  </p>
+<section class="hero">
+    <h2>Together for a Better Bangladesh 🇧🇩</h2>
+    <p>Food • Education • Health • Environment</p>
+    <a href="#donate" class="btn">Donate Now</a>
 </section>
 
-<!-- WORK -->
-<section>
-  <h2>Our Work</h2>
-  <div class="cards">
-    <div class="card">🍲 Food Support</div>
-    <div class="card">📚 Education</div>
-    <div class="card">🏥 Health</div>
-    <div class="card">💼 Employment</div>
-    <div class="card">🌱 Environment</div>
-  </div>
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Shadhinota Foundation is a youth-driven NGO working to fight hunger,
+        improve education, healthcare, and support the environment.
+    </p>
 </section>
 
-<!-- DONATE -->
-<section>
-  <h2>Support Us</h2>
-  <p>Send donation via bKash:</p>
-  <h3>+8801700915545</h3>
+<section id="work">
+    <h2>Our Work</h2>
 
-  <a class="btn" href="https://bkash.com/send-money" target="_blank">
-    Send Money Now
-  </a>
+    <div class="card">
+        <h3>Food Support</h3>
+        <p>Helping underprivileged families with meals.</p>
+    </div>
+
+    <div class="card">
+        <h3>Education</h3>
+        <p>Providing learning resources and support.</p>
+    </div>
+
+    <div class="card">
+        <h3>Health</h3>
+        <p>Organizing medical camps and awareness programs.</p>
+    </div>
+
+    <div class="card">
+        <h3>Environment</h3>
+        <p>Tree plantation and sustainability campaigns.</p>
+    </div>
+
+</section>
+
+<section id="donate">
+    <h2>Donate</h2>
+    <p>Support us via bKash</p>
+
+    <div class="bkash">
+        📱 Send Money to: <strong>+880XXXXXXXXXX</strong>
+    </div>
+
+    <button onclick="donate()">Donate Now</button>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: shadhinota@gmail.com</p>
 </section>
 
 <footer>
-  <p>© 2026 Shadhinota Foundation</p>
+    <p>© 2026 Shadhinota Foundation</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
