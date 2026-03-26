@@ -91,3 +91,9 @@ footer {
 header {
     padding: 20px 30px;
 }
+.logo-area {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
