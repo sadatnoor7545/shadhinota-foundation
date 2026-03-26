@@ -100,3 +100,26 @@ header {
 .logo-area:hover {
     opacity: 0.8;
 }
+.logo-area {
+    display: flex;
+    align-items: center;
+    text-decoration: none;   /* removes underline */
+    color: white;            /* fixes purple text */
+}
+.logo-area h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+    .logo-area img {
+    height: 70px;
+    margin-right: 12px;
+}
+    header {
+    background: #006a4e;
+    padding: 15px 30px;
+}
+
+.logo-area:hover {
+    opacity: 0.9;
+}
