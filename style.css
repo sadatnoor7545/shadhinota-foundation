@@ -97,3 +97,6 @@ header {
     text-decoration: none;
     color: white;
 }
+.logo-area:hover {
+    opacity: 0.8;
+}
