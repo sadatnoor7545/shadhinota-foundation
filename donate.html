@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Donate - Shadhinota Foundation</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Donate | Shadhinota Foundation</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-    <div class="logo-area">
-        <img src="logo.png">
-        <h1>Shadhinota Foundation</h1>
-    </div>
-</header>
+<nav>
+    <h2 onclick="goHome()">Shadhinota</h2>
+</nav>
 
-<section class="donate-page">
+<section class="section">
 
-    <h2>Support Our Cause ❤️</h2>
+<h2>Support Our Mission</h2>
+<p>Your contribution helps build a better future.</p>
 
-    <p>Send your donation via bKash</p>
+<div class="donate-container">
 
-    <div class="bkash">
-        📱 Number: <strong>+8801700-915545</strong>
-    </div>
-
-    <div class="qr-big">
-        <img src="bkash-qr.png" alt="QR Code">
+    <!-- BKASH -->
+    <div class="donate-card">
+        <h3>bKash</h3>
+        <img src="bkash-qr.png" alt="bKash QR">
+        <p>Send Money to:</p>
+        <div class="copy" onclick="copyNumber('01XXXXXXXXX')">01XXXXXXXXX</div>
     </div>
 
-    <p>Scan the QR using your bKash app to donate instantly.</p>
+    <!-- NAGAD -->
+    <div class="donate-card">
+        <h3>Nagad</h3>
+        <img src="nagad-qr.png" alt="Nagad QR">
+        <p>Send Money to:</p>
+        <div class="copy" onclick="copyNumber('01XXXXXXXXX')">01XXXXXXXXX</div>
+    </div>
 
-    <a href="index.html" class="btn">← Back to Home</a>
+</div>
 
 </section>
 
+<footer>
+    <p>© 2026 Shadhinota Foundation</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
