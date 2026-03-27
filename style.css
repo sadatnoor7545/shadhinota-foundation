@@ -128,3 +128,18 @@ object-fit:contain;
 font-weight:600;
 font-size:18px;
 }
+
+.donate-card{
+background:white;
+padding:30px 25px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+width:260px;
+text-align:center;
+transition:.3s;
+}
+
+.donate-card:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
