@@ -1,81 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Shadhinota Foundation</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shadhinota Foundation</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-    <a href="index.html" class="logo-area">
-    <img src="logo.png" alt="Logo">
-</a>
+<nav>
+    <h2 onclick="scrollTop()">Shadhinota</h2>
+    <div>
+        <button onclick="toggleLang()">🌍</button>
+        <button onclick="toggleDark()">🌙</button>
+    </div>
+</nav>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#work">Our Work</a>
-        <a href="#donate">Donate</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
+<!-- HERO -->
 <section class="hero">
-    <h2>Together for a Better Bangladesh 🇧🇩</h2>
-    <p>Food • Education • Health • Environment</p>
-    <a href="#donate" class="btn">Donate Now</a>
+    <div>
+        <h1 id="title">Freedom For All</h1>
+        <p id="subtitle">Building a society free from poverty, hunger & injustice</p>
+        <br>
+        <a href="donate.html"><button class="btn">Donate Now</button></a>
+    </div>
 </section>
 
-    <style>
-  #about-us p {
-    text-align: justify;
-  }
-</style>
-    
-<section id="about">
-    <h2>About Us</h2>
-    <p>
-        Shadhinota Foundation is a purpose driven initiative dedicated to building a truly free society where every individual can live with dignity, opportunity, and hope. We believe that real freedom means more than independence. It means being free from poverty, illiteracy, hunger, and pollution. Our mission is to address these fundamental challenges by empowering communities, promoting education, supporting livelihoods, and protecting the environment. Through collective effort and compassion, we strive to create a future where freedom is not just an idea, but a reality for all.
+<!-- IMPACT -->
+<section class="section">
+    <h2 id="impactTitle">Our Impact</h2>
 
-    </p>
-</section>
+    <div class="dashboard">
+        <div class="box">
+            <h3>500+</h3>
+            <p id="p1">People Helped</p>
+        </div>
 
-<section id="work">
-    <h2>Our Work</h2>
+        <div class="box">
+            <h3>120+</h3>
+            <p id="p2">Volunteers</p>
+        </div>
 
-    <div class="card">
-        <h3>Food Support</h3>
-        <p>Helping underprivileged families with meals.</p>
+        <div class="box">
+            <h3>50+</h3>
+            <p id="p3">Projects</p>
+        </div>
     </div>
-
-    <div class="card">
-        <h3>Education</h3>
-        <p>Providing learning resources and support.</p>
-    </div>
-
-    <div class="card">
-        <h3>Health</h3>
-        <p>Organizing medical camps and awareness programs.</p>
-    </div>
-
-    <div class="card">
-        <h3>Environment</h3>
-        <p>Tree plantation and sustainability campaigns.</p>
-    </div>
-
-</section>
-
-<section id="donate" class="donate-section">
-    <h2>Donate</h2>
-    <p>Support our mission and make an impact.</p>
-
-    <a href="donate.html" class="donate-btn">Donate Now</a>
-</section>
-
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: shadhinotafoundation26@gmail.com</p>
 </section>
 
 <footer>
